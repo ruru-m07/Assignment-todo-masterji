@@ -47,7 +47,6 @@ function App() {
         </h1>
       </header>
       <div className="space-y-5 ">
-        {/* Form for adding new todos */}
         <form onSubmit={handleAddTodo} className="flex gap-4">
           <Input
             type="text"
@@ -56,12 +55,10 @@ function App() {
             placeholder="Enter a new task"
             className="w-full"
           />
-          <Button type="submit">Add</Button>
+          <Button disabled={newTodo.trim() === ""} type="submit">Add</Button>
         </form>
-
-        {/* Displaying todos as cards if there are any */}
         {todos.length > 0 ? (
-          <Card className="p-4 grid grid-cols-3 gap-3">
+          <Card className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {todos.map((todo, index) => (
               <Card key={index} className="p-3 space-y-3">
                 {/* Input for updating todo text */}
