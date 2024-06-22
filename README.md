@@ -32,7 +32,7 @@ To run this app locally, follow these steps:
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/todo-app.git
+git clone https://github.com/ruru-m07/Assignment-todo-masterji.git
 cd todo-app
 ```
 
@@ -48,7 +48,7 @@ npm install
 npm run dev
 ```
 
-4. Open the app: Navigate to http://localhost:3000 in your browser.
+4. Open the app: Navigate to http://localhost:5173 in your browser.
 
 ## Usage
 
