@@ -1,30 +1,74 @@
-# React + TypeScript + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Todo App built using React, Vite, TailwindCSS, and shadcn components. This app helps you manage your tasks efficiently by allowing you to add, update, mark as done/undo, and delete tasks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add Todos: Easily add new tasks using the input field and "Add" button.
+- Update Todos: Modify the text of existing tasks directly.
+- Mark as Done/Undo: Mark tasks as done and undo them if necessary.
+- Delete Todos: Remove tasks that are no longer needed.
+- Responsive Design: The app is fully responsive and works well on all devices.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: For building the user interface.
+- Vite: For fast and efficient development.
+- TailwindCSS: For styling the app with utility-first CSS.
+- shadcn components: For pre-designed UI components.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- App.js: The main component that manages the state and renders the UI.
+- components/ui/button.js: Custom button component.
+- components/ui/input.js: Custom input component.
+- components/ui/card.js: Custom card component.
+- lib/TodoManager.js: Utility class for managing todos (add, delete, update, toggle).
+
+## Installation
+
+To run this app locally, follow these steps:
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies:
+
+```sh
+npm install
+```
+
+3. Run the development server:
+
+```sh
+npm run dev
+```
+
+4. Open the app: Navigate to http://localhost:3000 in your browser.
+
+## Usage
+
+- Add a new task: Enter the task description in the input field and click the "Add" button.
+- Update a task: Click on the text of an existing task to modify it.
+- Mark as Done/Undo: Click the "Mark as Done" button to mark a task as done. Click "Undo" to revert it.
+- Delete a task: Click the "Delete" button to remove a task.
+
+## Contributing
+
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions are always welcome!
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Acknowledgements
+
+- React: [https://reactjs.org/](https://reactjs.org/)
+- Vite: [https://vitejs.dev/](https://vitejs.dev/)
+- TailwindCSS: [https://tailwindcss.com/](https://tailwindcss.com/)
+- shadcn: [https://shadcn.dev/](https://shadcn.dev/)
+
