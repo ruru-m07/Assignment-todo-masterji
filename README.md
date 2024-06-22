@@ -2,6 +2,10 @@
 
 This is a simple Todo App built using React, Vite, TailwindCSS, and shadcn components. This app helps you manage your tasks efficiently by allowing you to add, update, mark as done/undo, and delete tasks.
 
+## Screenshots
+
+![image](https://github.com/ruru-m07/Assignment-todo-masterji/assets/142723369/4f4d5535-fdee-4994-a8fd-10d22c6a41af)
+
 ## Features
 
 - Add Todos: Easily add new tasks using the input field and "Add" button.
